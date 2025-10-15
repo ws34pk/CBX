@@ -1,0 +1,6 @@
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:31:18:virtual void ModelListener::check_buttons(uint8_t)	1
+../TouchGFX/gui/include/gui/screen2_2_screen/Screen2_2Presenter.hpp:28:13:Screen2_2Presenter::~Screen2_2Presenter()	1
+../TouchGFX/gui/src/screen2_2_screen/Screen2_2Presenter.cpp:10:6:virtual void Screen2_2Presenter::activate()	1
+../TouchGFX/gui/include/gui/screen2_2_screen/Screen2_2Presenter.hpp:28:13:virtual Screen2_2Presenter::~Screen2_2Presenter()	1
+../TouchGFX/gui/include/gui/screen2_2_screen/Screen2_2Presenter.hpp:28:13:virtual void* Screen2_2Presenter::_ZThn4_N18Screen2_2PresenterD1Ev()	1
+../TouchGFX/gui/src/screen2_2_screen/Screen2_2Presenter.cpp:4:1:Screen2_2Presenter::Screen2_2Presenter(Screen2_2View&)	1

@@ -1,0 +1,10 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../TouchGFX/gui/include/gui/newtrack_screen/newtrackView.hpp:11:13:newtrackView::~newtrackView()	1
+../TouchGFX/gui/include/gui/newtrack_screen/newtrackView.hpp:11:13:virtual newtrackView::~newtrackView()	1
+../TouchGFX/gui/src/newtrack_screen/newtrackView.cpp:3:1:newtrackView::newtrackView()	1
+../TouchGFX/gui/src/newtrack_screen/newtrackView.cpp:8:6:virtual void newtrackView::setupScreen()	1
+../TouchGFX/gui/src/newtrack_screen/newtrackView.cpp:13:6:virtual void newtrackView::tearDownScreen()	1
+../TouchGFX/gui/src/newtrack_screen/newtrackView.cpp:18:6:virtual void newtrackView::check_buttons(uint8_t)	1

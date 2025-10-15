@@ -1,0 +1,15 @@
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:37:18:virtual void touchgfx::Presenter::activate()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:47:18:virtual void touchgfx::Presenter::deactivate()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:touchgfx::Presenter::~Presenter()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:52:13:virtual touchgfx::Presenter::~Presenter()	1
+../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:5:ModelListener::ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:20:13:ModelListener::~ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:20:13:virtual ModelListener::~ModelListener()	1
+../TouchGFX/gui/include/gui/model/ModelListener.hpp:31:18:virtual void ModelListener::check_buttons(uint8_t)	1
+../TouchGFX/gui/include/gui/screen6_screen/Screen6Presenter.hpp:28:13:Screen6Presenter::~Screen6Presenter()	1
+../TouchGFX/gui/include/gui/screen6_screen/Screen6Presenter.hpp:28:13:virtual Screen6Presenter::~Screen6Presenter()	1
+../TouchGFX/gui/src/screen6_screen/Screen6Presenter.cpp:4:1:Screen6Presenter::Screen6Presenter(Screen6View&)	1
+../TouchGFX/gui/src/screen6_screen/Screen6Presenter.cpp:10:6:virtual void Screen6Presenter::activate()	1
+../TouchGFX/gui/src/screen6_screen/Screen6Presenter.cpp:15:6:virtual void Screen6Presenter::deactivate()	1
+../TouchGFX/gui/src/screen6_screen/Screen6Presenter.cpp:20:6:virtual void Screen6Presenter::check_buttons(uint8_t)	1

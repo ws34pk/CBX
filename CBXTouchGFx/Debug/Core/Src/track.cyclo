@@ -1,0 +1,4 @@
+../Core/Src/track.c:36:6:line_slope	1
+../Core/Src/track.c:43:6:displacement_from_line	1
+../Core/Src/track.c:52:9:check_crossing_point	3
+../Core/Src/track.c:98:6:track_process	37

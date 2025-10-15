@@ -1,0 +1,6 @@
+../TouchGFX/gui/include/gui/newtrack_screen/newtrackPresenter.hpp:28:13:newtrackPresenter::~newtrackPresenter()	0	static
+../TouchGFX/gui/src/newtrack_screen/newtrackPresenter.cpp:10:6:virtual void newtrackPresenter::activate()	0	static
+../TouchGFX/gui/src/newtrack_screen/newtrackPresenter.cpp:20:6:virtual void newtrackPresenter::check_buttons(uint8_t)	0	static
+../TouchGFX/gui/include/gui/newtrack_screen/newtrackPresenter.hpp:28:13:virtual newtrackPresenter::~newtrackPresenter()	8	static
+../TouchGFX/gui/include/gui/newtrack_screen/newtrackPresenter.hpp:28:13:virtual void* newtrackPresenter::_ZThn4_N17newtrackPresenterD1Ev()	0	static
+../TouchGFX/gui/src/newtrack_screen/newtrackPresenter.cpp:4:1:newtrackPresenter::newtrackPresenter(newtrackView&)	0	static

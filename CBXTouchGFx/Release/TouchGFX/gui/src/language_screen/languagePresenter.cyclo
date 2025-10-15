@@ -1,0 +1,6 @@
+../TouchGFX/gui/include/gui/language_screen/languagePresenter.hpp:28:13:languagePresenter::~languagePresenter()	1
+../TouchGFX/gui/src/language_screen/languagePresenter.cpp:10:6:virtual void languagePresenter::activate()	1
+../TouchGFX/gui/src/language_screen/languagePresenter.cpp:20:6:virtual void languagePresenter::check_buttons(uint8_t)	1
+../TouchGFX/gui/include/gui/language_screen/languagePresenter.hpp:28:13:virtual languagePresenter::~languagePresenter()	1
+../TouchGFX/gui/include/gui/language_screen/languagePresenter.hpp:28:13:virtual void* languagePresenter::_ZThn4_N17languagePresenterD1Ev()	1
+../TouchGFX/gui/src/language_screen/languagePresenter.cpp:4:1:languagePresenter::languagePresenter(languageView&)	1

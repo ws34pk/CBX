@@ -1,0 +1,9 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+../TouchGFX/gui/src/settings_screen/settingsView.cpp:13:6:virtual void settingsView::tearDownScreen()	0	static
+../TouchGFX/gui/include/gui/settings_screen/settingsView.hpp:11:13:settingsView::~settingsView()	8	static
+../TouchGFX/gui/include/gui/settings_screen/settingsView.hpp:11:13:virtual settingsView::~settingsView()	8	static
+../TouchGFX/gui/src/settings_screen/settingsView.cpp:3:1:settingsView::settingsView()	8	static
+../TouchGFX/gui/src/settings_screen/settingsView.cpp:8:6:virtual void settingsView::setupScreen()	0	static
+../TouchGFX/gui/src/settings_screen/settingsView.cpp:18:6:virtual void settingsView::check_buttons(uint8_t)	8	static

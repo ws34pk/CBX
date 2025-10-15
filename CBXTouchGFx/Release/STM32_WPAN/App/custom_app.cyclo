@@ -1,0 +1,8 @@
+../STM32_WPAN/App/custom_app.c:95:6:Custom_STM_App_Notification	5
+../STM32_WPAN/App/custom_app.c:149:6:Custom_APP_Notification	3
+../STM32_WPAN/App/custom_app.c:186:6:Custom_APP_Init	1
+../STM32_WPAN/App/custom_app.c:206:13:Custom_My_gps_Update_Char	2
+../STM32_WPAN/App/custom_app.c:225:6:Custom_My_gps_Send_Notification	3
+../STM32_WPAN/App/custom_app.c:249:13:Custom_La_dat_Update_Char	2
+../STM32_WPAN/App/custom_app.c:268:6:Custom_La_dat_Send_Notification	2
+../STM32_WPAN/App/custom_app.c:289:6:myTask	2

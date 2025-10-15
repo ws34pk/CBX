@@ -1,0 +1,10 @@
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:1679:22:LL_RCC_LSE_SetDriveCapability	1
+../Core/Src/main.c:124:5:main	6
+../Core/Src/main.c:241:6:SystemClock_Config	3
+../Core/Src/main.c:306:6:PeriphCommonClock_Config	2
+../Core/Src/main.c:327:6:HAL_UART_RxHalfCpltCallback	2
+../Core/Src/main.c:333:6:HAL_UART_RxCpltCallback	2
+../Core/Src/main.c:342:6:HAL_GPIO_EXTI_Callback	6
+../Core/Src/main.c:361:6:usart_data_parse_process	15
+../Core/Src/main.c:427:6:extract_gps_data	4
+../Core/Src/main.c:460:6:Error_Handler	1

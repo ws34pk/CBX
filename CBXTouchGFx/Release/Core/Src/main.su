@@ -1,0 +1,10 @@
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:1679:22:LL_RCC_LSE_SetDriveCapability	16	static
+../Core/Src/main.c:124:5:main	16	static
+../Core/Src/main.c:241:6:SystemClock_Config	112	static
+../Core/Src/main.c:306:6:PeriphCommonClock_Config	88	static
+../Core/Src/main.c:327:6:HAL_UART_RxHalfCpltCallback	16	static
+../Core/Src/main.c:333:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/main.c:342:6:HAL_GPIO_EXTI_Callback	24	static
+../Core/Src/main.c:361:6:usart_data_parse_process	16	static
+../Core/Src/main.c:427:6:extract_gps_data	48	static
+../Core/Src/main.c:460:6:Error_Handler	4	static,ignoring_inline_asm
