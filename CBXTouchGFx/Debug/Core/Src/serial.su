@@ -1,0 +1,10 @@
+../Core/Src/serial.c:38:6:serial_comm_process	16	static
+../Core/Src/serial.c:51:6:UART_1_LineReader_Init	8	static
+../Core/Src/serial.c:75:19:usart_send_message	16	static
+../Core/Src/serial.c:83:6:transmit_messages_process	16	static
+../Core/Src/serial.c:104:6:received_messages_process	8	static
+../Core/Src/serial.c:136:9:check_messages_flags	4	static
+../Core/Src/serial.c:150:9:UART_1_LineAvailable	4	static
+../Core/Src/serial.c:155:7:UART_1_GetLine	4	static
+../Core/Src/serial.c:161:6:extract_gps_data	32	static
+../Core/Src/serial.c:188:9:extract_no_of_tracks	24	static

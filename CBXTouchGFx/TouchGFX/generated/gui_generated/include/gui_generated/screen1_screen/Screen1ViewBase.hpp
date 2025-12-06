@@ -28,16 +28,18 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Box box1;
-    touchgfx::Box box3;
     touchgfx::Box box2;
-    touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;
     touchgfx::Box box4;
+    touchgfx::Box box3;
+    touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea4;
     touchgfx::Box box5;
-    touchgfx::Box box6;
     touchgfx::TextArea textArea5;
+    touchgfx::Box box6;
+    touchgfx::Box box7;
     touchgfx::TextArea textArea6;
+    touchgfx::TextArea textArea7;
 
 private:
 

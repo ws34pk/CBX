@@ -22,7 +22,7 @@
 #include "stm32wbxx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-//#include "uart.h"
+#include "serial.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,9 +61,13 @@ extern RTC_HandleTypeDef hrtc;
 extern DMA_HandleTypeDef hdma_spi1_tx;
 extern SPI_HandleTypeDef hspi1;
 extern DMA_HandleTypeDef hdma_usart1_rx;
+extern DMA_HandleTypeDef hdma_usart1_tx;
 extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
 extern volatile uint16_t count;
+extern char usart1_rx_buf[RX_BUF_SIZE];
+extern volatile uint8_t usart1_line_buf[LINE_BUF_SIZE];   // Line buffer
+extern volatile uint8_t flag_uart_1_lineReady;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -290,6 +294,20 @@ void DMA1_Channel2_IRQHandler(void)
 }
 
 /**
+  * @brief This function handles DMA1 channel3 global interrupt.
+  */
+void DMA1_Channel3_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA1_Channel3_IRQn 0 */
+
+  /* USER CODE END DMA1_Channel3_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_usart1_tx);
+  /* USER CODE BEGIN DMA1_Channel3_IRQn 1 */
+
+  /* USER CODE END DMA1_Channel3_IRQn 1 */
+}
+
+/**
   * @brief This function handles SPI1 global interrupt.
   */
 void SPI1_IRQHandler(void)
@@ -309,8 +327,30 @@ void SPI1_IRQHandler(void)
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-	//count++;
-	//__HAL_UART_CLEAR_FLAG(&huart1,UART_FLAG_RXNE|UART_FLAG_FE|UART_FLAG_ORE);
+	if(__HAL_UART_GET_FLAG(&huart1, UART_FLAG_CMF))
+	{
+		__HAL_UART_CLEAR_FLAG(&huart1, UART_CLEAR_CMF);
+
+		// Stop DMA to freeze buffer
+		HAL_UART_DMAStop(&huart1);
+
+		// Get received length
+		uint16_t len = RX_BUF_SIZE - __HAL_DMA_GET_COUNTER(huart1.hdmarx);
+
+		if(len >= 2 && usart1_rx_buf[len-2] == '\r')  // Check CR before LF
+		{
+			uint16_t copyLen = len - 2; // Exclude CRLF
+			if(copyLen < LINE_BUF_SIZE)
+			{
+				memcpy(usart1_line_buf, usart1_rx_buf, copyLen);
+				usart1_line_buf[copyLen] = '\0';
+				flag_uart_1_lineReady = 1;
+			}
+		}
+
+		// Restart DMA reception for next line
+		HAL_UART_Receive_DMA(&huart1, usart1_rx_buf, RX_BUF_SIZE);
+	}
   /* USER CODE END USART1_IRQn 0 */
   HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */

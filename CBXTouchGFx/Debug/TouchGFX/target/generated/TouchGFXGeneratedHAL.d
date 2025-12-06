@@ -72,6 +72,23 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../TouchGFX/gui/include/gui/screen4_screen/Screen4View.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/screen4_screen/Screen4ViewBase.hpp \
  ../TouchGFX/gui/include/gui/screen4_screen/Screen4Presenter.hpp \
+ ../TouchGFX/gui/include/gui/addnewtrack_screen/addnewtrackView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/addnewtrack_screen/addnewtrackViewBase.hpp \
+ ../TouchGFX/gui/include/gui/addnewtrack_screen/addnewtrackPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  ../TouchGFX/gui/include/gui/newtrack_screen/newtrackView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/newtrack_screen/newtrackViewBase.hpp \
  ../TouchGFX/gui/include/gui/newtrack_screen/newtrackPresenter.hpp \
@@ -98,6 +115,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../TouchGFX/gui/include/gui/set_time_screen/set_timeView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/set_time_screen/set_timeViewBase.hpp \
  ../TouchGFX/gui/include/gui/set_time_screen/set_timePresenter.hpp \
+ ../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/recordtrack_screen/recordtrackViewBase.hpp \
+ ../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintImpl.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Paint.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintRGB565Impl.hpp \
@@ -219,6 +239,23 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../TouchGFX/gui/include/gui/screen4_screen/Screen4View.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/screen4_screen/Screen4ViewBase.hpp:
 ../TouchGFX/gui/include/gui/screen4_screen/Screen4Presenter.hpp:
+../TouchGFX/gui/include/gui/addnewtrack_screen/addnewtrackView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/addnewtrack_screen/addnewtrackViewBase.hpp:
+../TouchGFX/gui/include/gui/addnewtrack_screen/addnewtrackPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
+../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 ../TouchGFX/gui/include/gui/newtrack_screen/newtrackView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/newtrack_screen/newtrackViewBase.hpp:
 ../TouchGFX/gui/include/gui/newtrack_screen/newtrackPresenter.hpp:
@@ -245,6 +282,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../TouchGFX/gui/include/gui/set_time_screen/set_timeView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/set_time_screen/set_timeViewBase.hpp:
 ../TouchGFX/gui/include/gui/set_time_screen/set_timePresenter.hpp:
+../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/recordtrack_screen/recordtrackViewBase.hpp:
+../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackPresenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintImpl.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Paint.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintRGB565Impl.hpp:

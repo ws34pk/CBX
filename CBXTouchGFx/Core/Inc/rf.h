@@ -36,6 +36,8 @@ extern "C" {
 
 /* USER CODE END Private defines */
 
+void MX_RF_Init(void);
+
 /* USER CODE BEGIN Prototypes */
 
 /* USER CODE END Prototypes */

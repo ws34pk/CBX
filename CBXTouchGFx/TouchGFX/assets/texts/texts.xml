@@ -14,6 +14,91 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_XD2T" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">c</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_FFZY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+        <Translation Language="GE">New Text&lt;value&gt;</Translation>
+        <Translation Language="FR">New Text&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_FSEN" Alignment="Center" TypographyId="Typography_05">
+        <Translation Language="GB">BACK</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_8V7Y" Alignment="Left" TypographyId="Typography_06">
+        <Translation Language="GB">00 : 00</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_QZMD" Alignment="Left" TypographyId="Typography_02">
+        <Translation Language="GB">000</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_ITC1" Alignment="Left" TypographyId="Typography_02">
+        <Translation Language="GB">&lt;000&gt;</Translation>
+        <Translation Language="GE">New Text&lt;value&gt;</Translation>
+        <Translation Language="FR">New Text&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HC2F" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">HR</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_02LD" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">Speed Km/hr</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_KVYP" Alignment="Left" TypographyId="Typography_02">
+        <Translation Language="GB">000</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_HC0O" Alignment="Left" TypographyId="Typography_02">
+        <Translation Language="GB">&lt;000&gt;</Translation>
+        <Translation Language="GE">New Text&lt;value&gt;</Translation>
+        <Translation Language="FR">New Text&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NSL9" Alignment="Left" TypographyId="Typography_05">
+        <Translation Language="GB">START</Translation>
+        <Translation Language="GE">New Text</Translation>
+        <Translation Language="FR">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_YBOV" Alignment="Center" TypographyId="Typography_05">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+        <Translation Language="GE">New Text&lt;value&gt;</Translation>
+        <Translation Language="FR">New Text&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_8WFO" Alignment="Center" TypographyId="Typography_06">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+        <Translation Language="GE">New Text&lt;value&gt;</Translation>
+        <Translation Language="FR">New Text&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9LXF" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">BACK</Translation>
+        <Translation Language="GE">ZURÜCK</Translation>
+        <Translation Language="FR"></Translation>
+      </Text>
+      <Text Id="__SingleUse_JFVG" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">RECORD A NEW&#10; SESSION</Translation>
+        <Translation Language="GE">EINE SITZUNG AUFZEICHNEN</Translation>
+        <Translation Language="FR"></Translation>
+      </Text>
+      <Text Id="__SingleUse_1950" Alignment="Center" TypographyId="Typography_03">
+        <Translation Language="GB">Record a new session and choose a track configuration afterwards in the App.</Translation>
+        <Translation Language="GE">Zeichnen Sie eine Sitzung auf und wählen Sie anschließend in der App eine Streckenkonfiguration aus</Translation>
+        <Translation Language="FR"></Translation>
+      </Text>
+      <Text Id="__SingleUse_QCEW" Alignment="Left" TypographyId="Typography_05">
+        <Translation Language="GB">ADD NEW TRACK</Translation>
+        <Translation Language="GE">RUNDENZEITEN</Translation>
+        <Translation Language="FR"></Translation>
+      </Text>
       <Text Id="__SingleUse_DN1C" Alignment="Left" TypographyId="Typography_01">
         <Translation Language="GB">START</Translation>
         <Translation Language="GE">New Text</Translation>
@@ -494,27 +579,27 @@
         <Translation Language="GE">Gleise in der Nähe</Translation>
         <Translation Language="FR"></Translation>
       </Text>
-      <Text Id="__SingleUse_SJ5R" Alignment="Left" TypographyId="Typography_01">
+      <Text Id="__SingleUse_SJ5R" Alignment="Left" TypographyId="Typography_05">
         <Translation Language="GB">SETTINGS</Translation>
         <Translation Language="GE">EINSTELLUNGEN</Translation>
         <Translation Language="FR"></Translation>
       </Text>
-      <Text Id="__SingleUse_JPMO" Alignment="Left" TypographyId="Typography_01">
+      <Text Id="__SingleUse_JPMO" Alignment="Left" TypographyId="Typography_05">
         <Translation Language="GB">RESULTS</Translation>
         <Translation Language="GE">ERGEBNISSE</Translation>
         <Translation Language="FR"></Translation>
       </Text>
-      <Text Id="__SingleUse_9ZOT" Alignment="Left" TypographyId="Typography_01">
+      <Text Id="__SingleUse_9ZOT" Alignment="Left" TypographyId="Typography_05">
         <Translation Language="GB">TIME ONLY</Translation>
         <Translation Language="GE">NUR ZEIT</Translation>
         <Translation Language="FR"></Translation>
       </Text>
-      <Text Id="__SingleUse_VZSZ" Alignment="Left" TypographyId="Typography_01">
+      <Text Id="__SingleUse_VZSZ" Alignment="Left" TypographyId="Typography_05">
         <Translation Language="GB">RACE STARTS</Translation>
         <Translation Language="GE">Das Rennen beginnt</Translation>
         <Translation Language="FR"></Translation>
       </Text>
-      <Text Id="__SingleUse_0GYE" Alignment="Left" TypographyId="Typography_01">
+      <Text Id="__SingleUse_0GYE" Alignment="Left" TypographyId="Typography_05">
         <Translation Language="GB">LAP TIMINGS</Translation>
         <Translation Language="GE">RUNDENZEITEN</Translation>
         <Translation Language="FR"></Translation>
@@ -530,5 +615,8 @@
     <Typography Id="XXL" Font="verdana.ttf" Size="90" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Typography_02" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     <Typography Id="Typography_03" Font="verdana.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    <Typography Id="Typography_04" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_05" Font="verdanab.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_06" Font="verdanab.ttf" Size="34" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

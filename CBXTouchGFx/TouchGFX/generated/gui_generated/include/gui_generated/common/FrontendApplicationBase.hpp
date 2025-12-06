@@ -35,6 +35,9 @@ public:
     // Screen4
     void gotoScreen4ScreenNoTransition();
 
+    // addnewtrack
+    void gotoaddnewtrackScreenNoTransition();
+
     // newtrack
     void gotonewtrackScreenNoTransition();
 
@@ -56,6 +59,9 @@ public:
     // set_time
     void gotoset_timeScreenNoTransition();
 
+    // recordtrack
+    void gotorecordtrackScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -75,6 +81,9 @@ protected:
 
     // Screen4
     void gotoScreen4ScreenNoTransitionImpl();
+
+    // addnewtrack
+    void gotoaddnewtrackScreenNoTransitionImpl();
 
     // newtrack
     void gotonewtrackScreenNoTransitionImpl();
@@ -96,6 +105,9 @@ protected:
 
     // set_time
     void gotoset_timeScreenNoTransitionImpl();
+
+    // recordtrack
+    void gotorecordtrackScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

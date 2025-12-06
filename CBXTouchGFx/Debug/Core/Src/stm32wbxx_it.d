@@ -60,7 +60,7 @@ Core/Src/stm32wbxx_it.o: ../Core/Src/stm32wbxx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
  ../Core/Inc/app_entry.h ../Core/Inc/app_common.h \
- ../Core/Inc/stm32wbxx_it.h
+ ../Core/Inc/stm32wbxx_it.h ../Core/Inc/serial.h ../Core/Inc/main.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -126,3 +126,5 @@ Core/Src/stm32wbxx_it.o: ../Core/Src/stm32wbxx_it.c ../Core/Inc/main.h \
 ../Core/Inc/app_entry.h:
 ../Core/Inc/app_common.h:
 ../Core/Inc/stm32wbxx_it.h:
+../Core/Inc/serial.h:
+../Core/Inc/main.h:

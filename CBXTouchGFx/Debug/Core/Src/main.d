@@ -67,7 +67,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/z_displ_ILI9XXX.h ../Core/Inc/z_touch_XPT2046.h \
  ../Core/Inc/track.h \
  C:/Users/user/STM32Cube/Repository/STM32Cube_FW_WB_V1.22.1/Drivers/CMSIS/DSP/Include/arm_math.h \
- ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h ../Core/Inc/serial.h
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -149,3 +149,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/track.h:
 C:/Users/user/STM32Cube/Repository/STM32Cube_FW_WB_V1.22.1/Drivers/CMSIS/DSP/Include/arm_math.h:
 ../Drivers/CMSIS/Include/cmsis_compiler.h:
+../Core/Inc/serial.h:

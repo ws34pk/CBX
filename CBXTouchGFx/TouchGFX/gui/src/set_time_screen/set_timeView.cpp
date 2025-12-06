@@ -2,10 +2,12 @@
 #include <touchgfx/Color.hpp>
 
 extern "C" {
+#include "main.h"
 #include "rtc.h"
 extern volatile RTC_DateTypeDef rtc_date;
 extern volatile RTC_TimeTypeDef rtc_time;
-extern volatile uint8_t flag_update_rtc;
+//extern volatile uint8_t flag_update_rtc;
+extern volatile uint32_t FLAGS_1;
 }
 
 set_timeView::set_timeView()
@@ -43,7 +45,8 @@ void set_timeView::check_buttons(uint8_t buttons_state)
 			}
 			Unicode::snprintf(min_textBuffer, sizeof(min_textBuffer), "%02d", rtc_time.Minutes);
 		}
-		flag_update_rtc = 1;
+		//flag_update_rtc = 1;
+		set_flag(&FLAGS_1, FLAG_UPDATE_RTC);
 		box1.invalidate();
 	}
 	if(buttons_state == 0x08) {
@@ -58,7 +61,8 @@ void set_timeView::check_buttons(uint8_t buttons_state)
 				rtc_time.Minutes = 59;
 			Unicode::snprintf(min_textBuffer, sizeof(min_textBuffer), "%02d", rtc_time.Minutes);
 		}
-		flag_update_rtc = 1;
+		//flag_update_rtc = 1;
+		set_flag(&FLAGS_1, FLAG_UPDATE_RTC);
 		box1.invalidate();
 	}
 	if(buttons_state == 0x02) {

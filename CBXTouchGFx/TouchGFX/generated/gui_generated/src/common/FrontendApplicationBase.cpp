@@ -19,6 +19,8 @@
 #include <gui/screen3_screen/Screen3Presenter.hpp>
 #include <gui/screen4_screen/Screen4View.hpp>
 #include <gui/screen4_screen/Screen4Presenter.hpp>
+#include <gui/addnewtrack_screen/addnewtrackView.hpp>
+#include <gui/addnewtrack_screen/addnewtrackPresenter.hpp>
 #include <gui/newtrack_screen/newtrackView.hpp>
 #include <gui/newtrack_screen/newtrackPresenter.hpp>
 #include <gui/newtrack_1_screen/newtrack_1View.hpp>
@@ -35,6 +37,8 @@
 #include <gui/set_date_screen/set_datePresenter.hpp>
 #include <gui/set_time_screen/set_timeView.hpp>
 #include <gui/set_time_screen/set_timePresenter.hpp>
+#include <gui/recordtrack_screen/recordtrackView.hpp>
+#include <gui/recordtrack_screen/recordtrackPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -118,6 +122,19 @@ void FrontendApplicationBase::gotoScreen4ScreenNoTransition()
 void FrontendApplicationBase::gotoScreen4ScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<Screen4View, Screen4Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// addnewtrack
+
+void FrontendApplicationBase::gotoaddnewtrackScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoaddnewtrackScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoaddnewtrackScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<addnewtrackView, addnewtrackPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // newtrack
@@ -209,4 +226,17 @@ void FrontendApplicationBase::gotoset_timeScreenNoTransition()
 void FrontendApplicationBase::gotoset_timeScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<set_timeView, set_timePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// recordtrack
+
+void FrontendApplicationBase::gotorecordtrackScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotorecordtrackScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotorecordtrackScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<recordtrackView, recordtrackPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

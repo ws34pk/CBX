@@ -60,6 +60,12 @@
     <ClCompile Include="..\..\gui\src\set_time_screen\set_timePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\set_time_screen\set_timeView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\set_time_screen\set_timeViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\addnewtrack_screen\addnewtrackPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\addnewtrack_screen\addnewtrackView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\addnewtrack_screen\addnewtrackViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\recordtrack_screen\recordtrackPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\recordtrack_screen\recordtrackView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\recordtrack_screen\recordtrackViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -249,6 +255,12 @@
     <ClInclude Include="..\..\gui\include\gui\set_time_screen\set_timePresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\set_time_screen\set_timeView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\set_time_screen\set_timeViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\addnewtrack_screen\addnewtrackPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\addnewtrack_screen\addnewtrackView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\addnewtrack_screen\addnewtrackViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\recordtrack_screen\recordtrackPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\recordtrack_screen\recordtrackView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\recordtrack_screen\recordtrackViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

@@ -22,12 +22,14 @@ RM := rm -rf
 -include TouchGFX/gui/src/screen3_screen/subdir.mk
 -include TouchGFX/gui/src/screen2_screen/subdir.mk
 -include TouchGFX/gui/src/screen1_screen/subdir.mk
+-include TouchGFX/gui/src/recordtrack_screen/subdir.mk
 -include TouchGFX/gui/src/newtrack_screen/subdir.mk
 -include TouchGFX/gui/src/newtrack_1_screen/subdir.mk
 -include TouchGFX/gui/src/model/subdir.mk
 -include TouchGFX/gui/src/main_screen/subdir.mk
 -include TouchGFX/gui/src/language_screen/subdir.mk
 -include TouchGFX/gui/src/common/subdir.mk
+-include TouchGFX/gui/src/addnewtrack_screen/subdir.mk
 -include TouchGFX/generated/texts/src/subdir.mk
 -include TouchGFX/generated/images/src/subdir.mk
 -include TouchGFX/generated/gui_generated/src/time_date_screen/subdir.mk
@@ -39,11 +41,13 @@ RM := rm -rf
 -include TouchGFX/generated/gui_generated/src/screen3_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/screen2_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/screen1_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/recordtrack_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/newtrack_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/newtrack_1_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/main_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/language_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/common/subdir.mk
+-include TouchGFX/generated/gui_generated/src/addnewtrack_screen/subdir.mk
 -include TouchGFX/generated/fonts/src/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/settings_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/set_time_screen/subdir.mk
@@ -136,8 +140,8 @@ all: main-build
 main-build: CBXTouchGFx.elf secondary-outputs
 
 # Tool invocations
-CBXTouchGFx.elf CBXTouchGFx.map: $(OBJS) $(USER_OBJS) D:\ARM\CBX-v1.0-main\CBX-v1.0-main\CBXTouchGFx\STM32WB55CGUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "CBXTouchGFx.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\ARM\CBX-v1.0-main\CBX-v1.0-main\CBXTouchGFx\STM32WB55CGUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CBXTouchGFx.map" -Wl,--gc-sections -static -L"D:\ARM\CBX-v1.0-main\CBX-v1.0-main\CBXTouchGFx\Middlewares\ST\touchgfx\lib\core\cortex_m4f\gcc" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+CBXTouchGFx.elf CBXTouchGFx.map: $(OBJS) $(USER_OBJS) C:\Users\user\git\MyCBX\CBXTouchGFx\STM32WB55CGUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "CBXTouchGFx.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\user\git\MyCBX\CBXTouchGFx\STM32WB55CGUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CBXTouchGFx.map" -Wl,--gc-sections -static -L"C:\Users\user\git\MyCBX\CBXTouchGFx\Middlewares\ST\touchgfx\lib\core\cortex_m4f\gcc" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

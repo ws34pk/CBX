@@ -2,10 +2,12 @@
 #include <touchgfx/Color.hpp>
 
 extern "C" {
+#include "main.h"
 #include "rtc.h"
 extern volatile RTC_DateTypeDef rtc_date;
 extern volatile RTC_TimeTypeDef rtc_time;
-extern volatile uint8_t flag_update_rtc;
+//extern volatile uint8_t flag_update_rtc;
+extern volatile uint32_t FLAGS_1;
 }
 
 set_dateView::set_dateView()
@@ -61,7 +63,8 @@ void set_dateView::check_buttons(uint8_t buttons_state)
 			Unicode::snprintf(year_textBuffer, sizeof(year_textBuffer), "20%02d", rtc_date.Year);
 			//date_text.setWildcard1(date_textBuffer);
 		}
-		flag_update_rtc = 1;
+		//flag_update_rtc = 1;
+		set_flag(&FLAGS_1, FLAG_UPDATE_RTC);
 		box1.invalidate();
 	}
 	if(buttons_state == 0x08) {

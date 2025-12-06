@@ -2,7 +2,9 @@
 #include <touchgfx/Color.hpp>
 
 extern "C" {
-extern uint8_t no_of_tracks;
+#include "serial.h"
+extern uint8_t flag_get_no_of_tracks;
+
 }
 
 Screen1View::Screen1View()
@@ -13,6 +15,7 @@ Screen1View::Screen1View()
 void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
+    flag_get_no_of_tracks = 1;
 }
 
 void Screen1View::tearDownScreen()
@@ -24,17 +27,18 @@ void Screen1View::check_buttons(uint8_t buttons_state)
 {
 	if(buttons_state == 0x02) {
 		if(box2.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
-			if(no_of_tracks)
-				static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
-			else
-				static_cast<FrontendApplication*>(Application::getInstance())->gotonewtrackScreenNoTransition();
-			static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
+			//add new track screen
+			static_cast<FrontendApplication*>(Application::getInstance())->gotoaddnewtrackScreenNoTransition();
+			//else
+				//otherwise add a new track
+				//static_cast<FrontendApplication*>(Application::getInstance())->gotonewtrackScreenNoTransition();
+			//static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
 		}
 		else if(box3.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
 			static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen3ScreenNoTransition();
 		else if(box4.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
 			static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen6ScreenNoTransition();
-		else if(box6.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
+		else if(box7.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
 			static_cast<FrontendApplication*>(Application::getInstance())->gotosettingsScreenNoTransition();
 
 	}
@@ -53,6 +57,9 @@ void Screen1View::check_buttons(uint8_t buttons_state)
 			box6.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
 		}	else if(box6.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
 			box6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+			box7.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
+		}	else if(box7.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
+			box7.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 			box2.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
 		}
 		box1.invalidate();
@@ -61,7 +68,7 @@ void Screen1View::check_buttons(uint8_t buttons_state)
 		if(buttons_state == 0x08) {
 			if(box2.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
 				box2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-				box6.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
+				box7.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
 			} else if(box3.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
 				box3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 				box2.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
@@ -74,6 +81,9 @@ void Screen1View::check_buttons(uint8_t buttons_state)
 			} else if(box6.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
 				box6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 				box5.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
+			}	else if(box7.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
+				box7.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+				box6.setColor(touchgfx::Color::getColorFromRGB(0xff, 0x49, 0));
 			}
 			box1.invalidate();
 		}

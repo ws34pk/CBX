@@ -6,7 +6,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	16	static
 ../TouchGFX/gui/include/gui/set_time_screen/set_timeView.hpp:11:13:set_timeView::~set_timeView()	16	static
 ../TouchGFX/gui/include/gui/set_time_screen/set_timeView.hpp:11:13:virtual set_timeView::~set_timeView()	16	static
-../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:11:1:set_timeView::set_timeView()	16	static
-../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:20:6:virtual void set_timeView::setupScreen()	16	static
-../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:25:6:virtual void set_timeView::tearDownScreen()	16	static
-../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:30:6:virtual void set_timeView::check_buttons(uint8_t)	176	static
+../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:13:1:set_timeView::set_timeView()	16	static
+../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:22:6:virtual void set_timeView::setupScreen()	16	static
+../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:27:6:virtual void set_timeView::tearDownScreen()	16	static
+../TouchGFX/gui/src/set_time_screen/set_timeView.cpp:32:6:virtual void set_timeView::check_buttons(uint8_t)	176	static

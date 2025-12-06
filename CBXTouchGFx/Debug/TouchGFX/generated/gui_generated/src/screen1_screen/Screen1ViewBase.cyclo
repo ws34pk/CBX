@@ -52,8 +52,8 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:touchgfx::TextArea::~TextArea()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:40:7:virtual touchgfx::TextArea::~TextArea()	1
 ../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:8:1:Screen1ViewBase::Screen1ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:69:1:Screen1ViewBase::~Screen1ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:69:1:virtual Screen1ViewBase::~Screen1ViewBase()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:74:6:virtual void Screen1ViewBase::setupScreen()	1
-../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:79:6:virtual void Screen1ViewBase::handleKeyEvent(uint8_t)	2
+../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:79:1:Screen1ViewBase::~Screen1ViewBase()	1
+../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:79:1:virtual Screen1ViewBase::~Screen1ViewBase()	1
+../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:84:6:virtual void Screen1ViewBase::setupScreen()	1
+../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp:89:6:virtual void Screen1ViewBase::handleKeyEvent(uint8_t)	2
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = Screen1Presenter]	1

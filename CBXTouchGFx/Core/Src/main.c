@@ -39,6 +39,8 @@
 #include "stdio.h"
 #include "track.h"
 #include "arm_math.h"
+#include "serial.h"
+//#include "messages.h"
 //#include "uart.h"
 /* USER CODE END Includes */
 
@@ -85,7 +87,7 @@ uint8_t gps_fix_status;
 uint32_t current_time;
 uint8_t tempcount=0;
 
-uint8_t no_of_tracks = 1;
+//uint8_t flag_get_no_of_tracks = 0;
 
 volatile uint32_t button_dly;
 
@@ -99,10 +101,12 @@ uint8_t lati[10];
 
 volatile RTC_DateTypeDef rtc_date;
 volatile RTC_TimeTypeDef rtc_time;
-volatile uint8_t flag_update_rtc = 0;
+//volatile uint8_t flag_update_rtc = 0;
 
 volatile uint8_t flag_track_start_stop=0;
 volatile uint8_t flag_update_gps_data = 0;
+
+volatile uint32_t FLAGS_1 = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -142,7 +146,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+static uint8_t count=0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -180,6 +184,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_RTC_Init();
   MX_TouchGFX_Init();
+  MX_RF_Init();
   /* USER CODE BEGIN 2 */
 
   rtc_date.Date = 1;
@@ -223,10 +228,13 @@ int main(void)
   check_crossing_point(72.7302, 33.7771, 72.7304, 33.7769, 72.7304, 33.7774);
   check_crossing_point(72.7302, 33.7771, 72.7304, 33.7769, 72.73044467, 33.77714712);
   touch_gfx_update_time = HAL_GetTick();
-  HAL_UART_Receive_DMA(&huart1, usart_rx_buff, 24);
+  //HAL_UART_Receive_DMA(&huart1, usart_rx_buff, 24);
+  UART_1_LineReader_Init();
   current_time = HAL_GetTick();
   button_dly = HAL_GetTick();
-  HAL_NVIC_EnableIRQ(USART1_IRQn);
+  //HAL_NVIC_EnableIRQ(USART1_IRQn);
+  //send a test message
+
   /* USER CODE END 2 */
 
   /* Init code for STM32_WPAN */
@@ -236,9 +244,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	//HAL_Delay(50);
-
-
+	  serial_comm_process();
+	  transmit_messages_process();
+	  received_messages_process();
 	//send bluetooth data
 	if ((current_time + 1000) < HAL_GetTick()) {
 		current_time = HAL_GetTick();
@@ -247,30 +255,23 @@ int main(void)
 		HAL_RTC_GetTime(&hrtc, &rtc_time, RTC_FORMAT_BIN);
 		HAL_RTC_GetDate(&hrtc,&rtc_date,RTC_FORMAT_BIN);
 		track_process();
-	}
-	//check for any gps messages
-	//if(msg_counter)
-	//{
-	gps_data_process();
-		//check_crossing_point(72.7302, 33.7771, 72.7304, 33.7769, lon, lat);
-		/*
-		if (displacement < 0) {
-			HAL_GPIO_WritePin(BOARD_LED_GPIO_Port, BOARD_LED_Pin, 1);
-		} else {
-			HAL_GPIO_WritePin(BOARD_LED_GPIO_Port, BOARD_LED_Pin, 0);
+		if(count < 10) {
+			++count;
+			if(count > 6)
+			usart_send_message("HelloWorld\r\n");
 		}
-		*/
-	//}
-	//touchgfx update process
+	}
+	gps_data_process();
 	if((touch_gfx_update_time+100) < HAL_GetTick())
 	{
 		touchgfxSignalVSync();					// ask display syncronization
 		touch_gfx_update_time = HAL_GetTick();
 	}
-
-	if(flag_update_rtc)
+	//if(flag_update_rtc)
+	if(read_flag(&FLAGS_1, FLAG_UPDATE_RTC))
 	{
-		flag_update_rtc = 0;
+		//flag_update_rtc = 0;
+		clear_flag(&FLAGS_1, FLAG_UPDATE_RTC);
 		HAL_RTC_SetTime(&hrtc, &rtc_time, RTC_FORMAT_BIN);
 		HAL_RTC_SetDate(&hrtc, &rtc_date, RTC_FORMAT_BIN);
 	}
@@ -393,6 +394,21 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	}
 }
 
+//sets a single bit in a 32 bit variable
+void set_flag(volatile uint32_t *flag_variable, uint32_t flag)
+{
+	*flag_variable = *flag_variable | flag;
+}
+//clears a single bit in a 32-bit variable
+void clear_flag(volatile uint32_t *flag_variable, uint32_t flag)
+{
+	*flag_variable = *flag_variable & ~flag;
+}
+//returns the value of a single bit in a 32-bit variable
+uint32_t read_flag(uint32_t *flag_variable, uint32_t flag)
+{
+	return(*flag_variable & flag);
+}
 
 /*
 void DisplayDriver_TransferCompleteCallback()

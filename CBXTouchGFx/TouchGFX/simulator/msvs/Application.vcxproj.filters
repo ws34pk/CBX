@@ -328,6 +328,30 @@
     <Filter Include="Source Files\generated\gui_generated\set_time_screen">
       <UniqueIdentifier>88AA2689-9CBC-6B92-D9D5-D9DBBB0D5404</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\addnewtrack_screen">
+      <UniqueIdentifier>1817476E-9838-4D50-BEB1-FBB9FEF77D35</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\addnewtrack_screen">
+      <UniqueIdentifier>05517578-7D39-783E-9230-CD99A1E3EEE6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\addnewtrack_screen">
+      <UniqueIdentifier>87C6E931-48FD-D89F-0B1B-CDB1620A38B7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\addnewtrack_screen">
+      <UniqueIdentifier>C12F3E30-E6B1-B0E3-4776-0EFEEDFD09D8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\recordtrack_screen">
+      <UniqueIdentifier>10CA760B-D140-EA92-6EEE-072310667336</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\recordtrack_screen">
+      <UniqueIdentifier>C6115DB7-6533-A247-C5B7-2FD2D131F9EB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\recordtrack_screen">
+      <UniqueIdentifier>FDF50D3C-7F2A-C5DE-A764-F51B69EC8415</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\recordtrack_screen">
+      <UniqueIdentifier>54717D77-EB00-4788-A968-B9C43FFDB934</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -476,6 +500,24 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\set_time_screen\set_timeViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\set_time_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\addnewtrack_screen\addnewtrackPresenter.cpp">
+      <Filter>Source Files\gui\addnewtrack_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\addnewtrack_screen\addnewtrackView.cpp">
+      <Filter>Source Files\gui\addnewtrack_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\addnewtrack_screen\addnewtrackViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\addnewtrack_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\recordtrack_screen\recordtrackPresenter.cpp">
+      <Filter>Source Files\gui\recordtrack_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\recordtrack_screen\recordtrackView.cpp">
+      <Filter>Source Files\gui\recordtrack_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\recordtrack_screen\recordtrackViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\recordtrack_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1035,6 +1077,24 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\set_time_screen\set_timeViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\set_time_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\addnewtrack_screen\addnewtrackPresenter.hpp">
+      <Filter>Header Files\gui\addnewtrack_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\addnewtrack_screen\addnewtrackView.hpp">
+      <Filter>Header Files\gui\addnewtrack_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\addnewtrack_screen\addnewtrackViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\addnewtrack_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\recordtrack_screen\recordtrackPresenter.hpp">
+      <Filter>Header Files\gui\recordtrack_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\recordtrack_screen\recordtrackView.hpp">
+      <Filter>Header Files\gui\recordtrack_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\recordtrack_screen\recordtrackViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\recordtrack_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

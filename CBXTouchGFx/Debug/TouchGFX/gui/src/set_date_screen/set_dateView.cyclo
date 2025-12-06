@@ -6,7 +6,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
 ../TouchGFX/gui/include/gui/set_date_screen/set_dateView.hpp:11:13:set_dateView::~set_dateView()	1
 ../TouchGFX/gui/include/gui/set_date_screen/set_dateView.hpp:11:13:virtual set_dateView::~set_dateView()	1
-../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:11:1:set_dateView::set_dateView()	1
-../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:20:6:virtual void set_dateView::setupScreen()	1
-../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:25:6:virtual void set_dateView::tearDownScreen()	1
-../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:30:6:virtual void set_dateView::check_buttons(uint8_t)	19
+../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:13:1:set_dateView::set_dateView()	1
+../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:22:6:virtual void set_dateView::setupScreen()	1
+../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:27:6:virtual void set_dateView::tearDownScreen()	1
+../TouchGFX/gui/src/set_date_screen/set_dateView.cpp:32:6:virtual void set_dateView::check_buttons(uint8_t)	19
