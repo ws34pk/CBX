@@ -7,6 +7,7 @@
 #include <touchgfx/Bitmap.hpp>
 
 const uint16_t BITMAP_CBXICON1_ID = 0;
+const uint16_t BITMAP_LONG_DIVIDER_ID = 1;
 
 namespace BitmapDatabase
 {

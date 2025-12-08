@@ -7,17 +7,20 @@
 CPP_SRCS += \
 ../TouchGFX/generated/images/src/BitmapDatabase.cpp \
 ../TouchGFX/generated/images/src/SVGDatabase.cpp \
-../TouchGFX/generated/images/src/image_CBXicon1.cpp 
+../TouchGFX/generated/images/src/image_CBXicon1.cpp \
+../TouchGFX/generated/images/src/image_long_divider.cpp 
 
 OBJS += \
 ./TouchGFX/generated/images/src/BitmapDatabase.o \
 ./TouchGFX/generated/images/src/SVGDatabase.o \
-./TouchGFX/generated/images/src/image_CBXicon1.o 
+./TouchGFX/generated/images/src/image_CBXicon1.o \
+./TouchGFX/generated/images/src/image_long_divider.o 
 
 CPP_DEPS += \
 ./TouchGFX/generated/images/src/BitmapDatabase.d \
 ./TouchGFX/generated/images/src/SVGDatabase.d \
-./TouchGFX/generated/images/src/image_CBXicon1.d 
+./TouchGFX/generated/images/src/image_CBXicon1.d \
+./TouchGFX/generated/images/src/image_long_divider.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +30,7 @@ TouchGFX/generated/images/src/%.o TouchGFX/generated/images/src/%.su TouchGFX/ge
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src
 
 clean-TouchGFX-2f-generated-2f-images-2f-src:
-	-$(RM) ./TouchGFX/generated/images/src/BitmapDatabase.cyclo ./TouchGFX/generated/images/src/BitmapDatabase.d ./TouchGFX/generated/images/src/BitmapDatabase.o ./TouchGFX/generated/images/src/BitmapDatabase.su ./TouchGFX/generated/images/src/SVGDatabase.cyclo ./TouchGFX/generated/images/src/SVGDatabase.d ./TouchGFX/generated/images/src/SVGDatabase.o ./TouchGFX/generated/images/src/SVGDatabase.su ./TouchGFX/generated/images/src/image_CBXicon1.cyclo ./TouchGFX/generated/images/src/image_CBXicon1.d ./TouchGFX/generated/images/src/image_CBXicon1.o ./TouchGFX/generated/images/src/image_CBXicon1.su
+	-$(RM) ./TouchGFX/generated/images/src/BitmapDatabase.cyclo ./TouchGFX/generated/images/src/BitmapDatabase.d ./TouchGFX/generated/images/src/BitmapDatabase.o ./TouchGFX/generated/images/src/BitmapDatabase.su ./TouchGFX/generated/images/src/SVGDatabase.cyclo ./TouchGFX/generated/images/src/SVGDatabase.d ./TouchGFX/generated/images/src/SVGDatabase.o ./TouchGFX/generated/images/src/SVGDatabase.su ./TouchGFX/generated/images/src/image_CBXicon1.cyclo ./TouchGFX/generated/images/src/image_CBXicon1.d ./TouchGFX/generated/images/src/image_CBXicon1.o ./TouchGFX/generated/images/src/image_CBXicon1.su ./TouchGFX/generated/images/src/image_long_divider.cyclo ./TouchGFX/generated/images/src/image_long_divider.d ./TouchGFX/generated/images/src/image_long_divider.o ./TouchGFX/generated/images/src/image_long_divider.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src
 

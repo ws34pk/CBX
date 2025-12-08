@@ -166,7 +166,7 @@ void ILI9XXX_Init(){
 	Displ_Select();
 
 	HAL_GPIO_WritePin(DISPL_RST_GPIO_Port, DISPL_RST_Pin, GPIO_PIN_RESET);
-	HAL_Delay(1);
+	HAL_Delay(10);
 	HAL_GPIO_WritePin(DISPL_RST_GPIO_Port, DISPL_RST_Pin, GPIO_PIN_SET);
 	HAL_Delay(150);
 

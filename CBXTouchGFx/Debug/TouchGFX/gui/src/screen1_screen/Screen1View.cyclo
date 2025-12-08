@@ -6,7 +6,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:62:10:void touchgfx::Box::setColor(touchgfx::colortype)	1
 ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:11:13:Screen1View::~Screen1View()	1
 ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:11:13:virtual Screen1View::~Screen1View()	1
-../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:10:1:Screen1View::Screen1View()	1
-../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:15:6:virtual void Screen1View::setupScreen()	1
-../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:21:6:virtual void Screen1View::tearDownScreen()	1
-../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:26:6:virtual void Screen1View::check_buttons(uint8_t)	20
+../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:11:1:Screen1View::Screen1View()	1
+../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:16:6:virtual void Screen1View::setupScreen()	1
+../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:23:6:virtual void Screen1View::tearDownScreen()	1
+../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:28:6:virtual void Screen1View::check_buttons(uint8_t)	20

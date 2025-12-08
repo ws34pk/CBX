@@ -58,6 +58,7 @@ TouchGFX/build/MINGW32_NT-6.2/gui/src/settings_screen \
 TouchGFX/generated/fonts/src \
 TouchGFX/generated/gui_generated/src/addnewtrack_screen \
 TouchGFX/generated/gui_generated/src/common \
+TouchGFX/generated/gui_generated/src/containers \
 TouchGFX/generated/gui_generated/src/language_screen \
 TouchGFX/generated/gui_generated/src/main_screen \
 TouchGFX/generated/gui_generated/src/newtrack_1_screen \
@@ -72,10 +73,12 @@ TouchGFX/generated/gui_generated/src/set_date_screen \
 TouchGFX/generated/gui_generated/src/set_time_screen \
 TouchGFX/generated/gui_generated/src/settings_screen \
 TouchGFX/generated/gui_generated/src/time_date_screen \
+TouchGFX/generated/gui_generated/src/trackslist_screen \
 TouchGFX/generated/images/src \
 TouchGFX/generated/texts/src \
 TouchGFX/gui/src/addnewtrack_screen \
 TouchGFX/gui/src/common \
+TouchGFX/gui/src/containers \
 TouchGFX/gui/src/language_screen \
 TouchGFX/gui/src/main_screen \
 TouchGFX/gui/src/model \
@@ -91,6 +94,7 @@ TouchGFX/gui/src/set_date_screen \
 TouchGFX/gui/src/set_time_screen \
 TouchGFX/gui/src/settings_screen \
 TouchGFX/gui/src/time_date_screen \
+TouchGFX/gui/src/trackslist_screen \
 TouchGFX/target \
 TouchGFX/target/generated \
 Utilities/lpm/tiny_lpm \

@@ -2677,9 +2677,93 @@
             }
           }
         ]
+      },
+      {
+        "Name": "trackslist",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240
+          },
+          {
+            "Type": "ScrollList",
+            "Name": "scrollList1",
+            "Y": 18,
+            "Width": 300,
+            "Height": 204,
+            "IsCircular": true,
+            "ItemTemplateName": "CustomContainer1",
+            "NumberofItems": 10,
+            "ItemMargin": 1,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "OverShootPercentage": 75
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "trackslist"
+            }
+          }
+        ]
       }
     ],
-    "CustomContainerDefinitions": [],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CustomContainer1",
+        "Width": 300,
+        "Height": 50,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Y": 50,
+            "Width": 320,
+            "Height": 2,
+            "RelativeFilename": "long_divider.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 300,
+            "Height": 50
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 18,
+            "Y": 13,
+            "Width": 117,
+            "Height": 24,
+            "TextId": "__SingleUse_4LXK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_N2OR",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
     "Name": "MyApplication",
     "Resolution": {
       "Width": 320,

@@ -11,6 +11,8 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     938,  // T_RESOURCEID1: "New Text"
+    810,  // T___SINGLEUSE_N2OR: "000000000"
+    721,  // T___SINGLEUSE_4LXK: "<>"
     1094, // T___SINGLEUSE_XD2T: "c"
     721,  // T___SINGLEUSE_FFZY: "<>"
     1068, // T___SINGLEUSE_FSEN: "BACK"

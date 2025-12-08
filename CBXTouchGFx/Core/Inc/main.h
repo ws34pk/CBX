@@ -59,7 +59,7 @@ void Error_Handler(void);
 /* USER CODE BEGIN EFP */
 void set_flag(volatile uint32_t *flag_variable, uint32_t flag);
 void clear_flag(volatile uint32_t *flag_variable, uint32_t flag);
-uint32_t read_flag(uint32_t *flag_variable, uint32_t flag);
+uint32_t read_flag(volatile uint32_t *flag_variable, uint32_t flag);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -96,10 +96,13 @@ uint32_t read_flag(uint32_t *flag_variable, uint32_t flag);
 #define		FLAG_USART_2_LINE_READY				(1u << 1)
 #define		FLAG_MSG_TRANSMIT_CPLT				(1u << 2)
 
+
 #define		FLAG_UPDATE_RTC						(1u << 9)
-#define		FLAG_STOP_NEW_TRACK_PROCESS			(1u << 10)
-#define		FLAG_TRANSMIT_GPS_DATA				(1u << 11)
+#define		FLAG_START_NEW_TRACK_RECORDING		(1u << 10)
+#define		FLAG_STOP_NEW_TRACK_RECORDING		(1u << 11)
 #define		FLAG_LOG_GPS_DATA					(1u << 12)
+#define		FLAG_GET_NO_OF_TRACKS				(1u << 13)
+#define		FLAG_GET_TRACKS_LIST				(1u << 14)
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

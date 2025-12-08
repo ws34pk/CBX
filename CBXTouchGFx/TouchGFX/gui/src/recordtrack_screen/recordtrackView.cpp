@@ -2,8 +2,8 @@
 #include <touchgfx/Color.hpp>
 
 extern "C" {
-extern volatile uint8_t flag_start_new_track_recording;
-extern volatile uint8_t flag_stop_new_track_recording;
+#include "main.h"
+extern volatile uint32_t FLAGS_1;
 extern volatile uint8_t gps_data_validity;
 }
 
@@ -29,11 +29,13 @@ void recordtrackView::check_buttons(uint8_t buttons_state)
 		if(startbox.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0)) {
 			if(!flag_start_status) {
 				flag_start_status = 1;
-				flag_start_new_track_recording = 1;
+				//flag_start_new_track_recording = 1;
+				set_flag(&FLAGS_1, FLAG_START_NEW_TRACK_RECORDING);
 				Unicode::snprintf(starttextBuffer, STARTTEXT_SIZE, "STOP");
 			} else {
 				flag_start_status = 0;
-				flag_stop_new_track_recording = 1;
+				//flag_stop_new_track_recording = 1;
+				set_flag(&FLAGS_1, FLAG_STOP_NEW_TRACK_RECORDING);
 				Unicode::snprintf(starttextBuffer, STARTTEXT_SIZE, "START");
 			}
 		}

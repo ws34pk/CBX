@@ -196,7 +196,7 @@ static uint8_t count=0;
   HAL_RTC_SetTime(&hrtc, &rtc_time, RTC_FORMAT_BIN);
   HAL_RTC_SetDate(&hrtc, &rtc_date, RTC_FORMAT_BIN);
 
-  HAL_Delay(100);
+  HAL_Delay(500);
 
 
   //uint8_t writebuf[] = "External Loader Not Working";
@@ -261,7 +261,7 @@ static uint8_t count=0;
 			usart_send_message("HelloWorld\r\n");
 		}
 	}
-	gps_data_process();
+	//gps_data_process();
 	if((touch_gfx_update_time+100) < HAL_GetTick())
 	{
 		touchgfxSignalVSync();					// ask display syncronization
@@ -405,7 +405,7 @@ void clear_flag(volatile uint32_t *flag_variable, uint32_t flag)
 	*flag_variable = *flag_variable & ~flag;
 }
 //returns the value of a single bit in a 32-bit variable
-uint32_t read_flag(uint32_t *flag_variable, uint32_t flag)
+uint32_t read_flag(volatile uint32_t *flag_variable, uint32_t flag)
 {
 	return(*flag_variable & flag);
 }

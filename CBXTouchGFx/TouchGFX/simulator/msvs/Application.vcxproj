@@ -66,6 +66,11 @@
     <ClCompile Include="..\..\gui\src\recordtrack_screen\recordtrackPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\recordtrack_screen\recordtrackView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\recordtrack_screen\recordtrackViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp"/>
+    <ClCompile Include="..\..\gui\src\trackslist_screen\trackslistPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\trackslist_screen\trackslistView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\trackslist_screen\trackslistViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -261,6 +266,11 @@
     <ClInclude Include="..\..\gui\include\gui\recordtrack_screen\recordtrackPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\recordtrack_screen\recordtrackView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\recordtrack_screen\recordtrackViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\trackslist_screen\trackslistPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\trackslist_screen\trackslistView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\trackslist_screen\trackslistViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

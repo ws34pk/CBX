@@ -2,8 +2,9 @@
 #include <touchgfx/Color.hpp>
 
 extern "C" {
+#include "main.h"
 #include "serial.h"
-extern uint8_t flag_get_no_of_tracks;
+extern volatile uint32_t FLAGS_1;
 
 }
 
@@ -15,7 +16,8 @@ Screen1View::Screen1View()
 void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
-    flag_get_no_of_tracks = 1;
+    //flag_get_no_of_tracks = 1;
+    set_flag(&FLAGS_1, FLAG_GET_NO_OF_TRACKS);
 }
 
 void Screen1View::tearDownScreen()
@@ -35,7 +37,8 @@ void Screen1View::check_buttons(uint8_t buttons_state)
 			//static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
 		}
 		else if(box3.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
-			static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen3ScreenNoTransition();
+			//static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
+			static_cast<FrontendApplication*>(Application::getInstance())->gototrackslistScreenNoTransition();
 		else if(box4.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
 			static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen6ScreenNoTransition();
 		else if(box7.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))

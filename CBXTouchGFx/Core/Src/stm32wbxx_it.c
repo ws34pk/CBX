@@ -67,7 +67,8 @@ extern UART_HandleTypeDef huart1;
 extern volatile uint16_t count;
 extern char usart1_rx_buf[RX_BUF_SIZE];
 extern volatile uint8_t usart1_line_buf[LINE_BUF_SIZE];   // Line buffer
-extern volatile uint8_t flag_uart_1_lineReady;
+//extern volatile uint8_t flag_uart_1_lineReady;
+extern volatile uint32_t FLAGS_1;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -344,12 +345,14 @@ void USART1_IRQHandler(void)
 			{
 				memcpy(usart1_line_buf, usart1_rx_buf, copyLen);
 				usart1_line_buf[copyLen] = '\0';
-				flag_uart_1_lineReady = 1;
+				//flag_uart_1_lineReady = 1;
+				memset(usart1_rx_buf, 0x00, sizeof(usart1_rx_buf));
+				set_flag(&FLAGS_1, FLAG_USART_1_LINE_READY);
 			}
 		}
 
 		// Restart DMA reception for next line
-		HAL_UART_Receive_DMA(&huart1, usart1_rx_buf, RX_BUF_SIZE);
+		HAL_UART_Receive_DMA(&huart1, &usart1_rx_buf[0], RX_BUF_SIZE);
 	}
   /* USER CODE END USART1_IRQn 0 */
   HAL_UART_IRQHandler(&huart1);

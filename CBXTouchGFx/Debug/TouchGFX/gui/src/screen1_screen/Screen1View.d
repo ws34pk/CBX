@@ -52,8 +52,7 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
- ../Core/Inc/serial.h ../Core/Inc/main.h \
- ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
+ ../Core/Inc/main.h ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../Core/Inc/stm32wbxx_hal_conf.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_def.h \
@@ -113,7 +112,8 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_gpio.h \
  ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rtc.h \
  ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h \
- ../Core/Inc/app_entry.h ../Core/Inc/app_common.h
+ ../Core/Inc/app_entry.h ../Core/Inc/app_common.h ../Core/Inc/serial.h \
+ ../Core/Inc/main.h
 ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
@@ -166,7 +166,6 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
-../Core/Inc/serial.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:
 ../Core/Inc/stm32wbxx_hal_conf.h:
@@ -231,3 +230,5 @@ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_WB_V1.22.1/Drivers/CMSIS/Include
 ../Middlewares/ST/STM32_WPAN/ble/core/ble_bufsize.h:
 ../Core/Inc/app_entry.h:
 ../Core/Inc/app_common.h:
+../Core/Inc/serial.h:
+../Core/Inc/main.h:

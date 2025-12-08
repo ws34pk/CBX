@@ -352,6 +352,30 @@
     <Filter Include="Source Files\generated\gui_generated\recordtrack_screen">
       <UniqueIdentifier>54717D77-EB00-4788-A968-B9C43FFDB934</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\trackslist_screen">
+      <UniqueIdentifier>6CAC0063-B86D-BB9C-2C72-504CDE091D59</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\trackslist_screen">
+      <UniqueIdentifier>DBF68446-5F64-D860-11AA-CCC918D07A72</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\containers">
+      <UniqueIdentifier>31F6BFB1-F329-AFF1-8A1E-53C31B34EF23</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\containers">
+      <UniqueIdentifier>37576CCD-9278-987B-2302-A460B4971876</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\containers">
+      <UniqueIdentifier>214A46A1-0E16-E2D2-5FBA-9049458F1AD3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\containers">
+      <UniqueIdentifier>D9CD0E3A-7811-13E0-CCEC-E3902D8717C7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\trackslist_screen">
+      <UniqueIdentifier>BE470AB1-4857-3684-1D27-5D2BB370FEB3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\trackslist_screen">
+      <UniqueIdentifier>7741F687-4A15-F7E4-0F74-D78C2EEC0DC9</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -518,6 +542,21 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\recordtrack_screen\recordtrackViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\recordtrack_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\trackslist_screen\trackslistPresenter.cpp">
+      <Filter>Source Files\gui\trackslist_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\trackslist_screen\trackslistView.cpp">
+      <Filter>Source Files\gui\trackslist_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\trackslist_screen\trackslistViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\trackslist_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1095,6 +1134,21 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\recordtrack_screen\recordtrackViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\recordtrack_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\trackslist_screen\trackslistPresenter.hpp">
+      <Filter>Header Files\gui\trackslist_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\trackslist_screen\trackslistView.hpp">
+      <Filter>Header Files\gui\trackslist_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\trackslist_screen\trackslistViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\trackslist_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

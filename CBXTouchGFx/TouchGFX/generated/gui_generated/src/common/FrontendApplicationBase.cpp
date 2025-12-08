@@ -39,6 +39,8 @@
 #include <gui/set_time_screen/set_timePresenter.hpp>
 #include <gui/recordtrack_screen/recordtrackView.hpp>
 #include <gui/recordtrack_screen/recordtrackPresenter.hpp>
+#include <gui/trackslist_screen/trackslistView.hpp>
+#include <gui/trackslist_screen/trackslistPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -239,4 +241,17 @@ void FrontendApplicationBase::gotorecordtrackScreenNoTransition()
 void FrontendApplicationBase::gotorecordtrackScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<recordtrackView, recordtrackPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// trackslist
+
+void FrontendApplicationBase::gototrackslistScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gototrackslistScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gototrackslistScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<trackslistView, trackslistPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

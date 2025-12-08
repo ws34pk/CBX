@@ -116,6 +116,15 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/recordtrack_screen/recordtrackViewBase.hpp \
  ../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackPresenter.hpp \
+ ../TouchGFX/gui/include/gui/trackslist_screen/trackslistView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/trackslist_screen/trackslistViewBase.hpp \
+ ../TouchGFX/gui/include/gui/trackslist_screen/trackslistPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -233,4 +242,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 ../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/recordtrack_screen/recordtrackViewBase.hpp:
 ../TouchGFX/gui/include/gui/recordtrack_screen/recordtrackPresenter.hpp:
+../TouchGFX/gui/include/gui/trackslist_screen/trackslistView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/trackslist_screen/trackslistViewBase.hpp:
+../TouchGFX/gui/include/gui/trackslist_screen/trackslistPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
