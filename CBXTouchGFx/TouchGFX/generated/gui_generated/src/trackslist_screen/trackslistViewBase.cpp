@@ -23,9 +23,9 @@ trackslistViewBase::trackslistViewBase() :
     scrollList1.setDragAcceleration(10);
     scrollList1.setNumberOfItems(10);
     scrollList1.setPadding(0, 0);
-    scrollList1.setSnapping(false);
+    scrollList1.setSnapping(true);
     scrollList1.setOvershootPercentage(75);
-    scrollList1.setDrawableSize(50, 1);
+    scrollList1.setDrawableSize(52, 1);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
     add(scrollList1);
 }

@@ -13,6 +13,7 @@ RM := rm -rf
 -include Utilities/lpm/tiny_lpm/subdir.mk
 -include TouchGFX/target/generated/subdir.mk
 -include TouchGFX/target/subdir.mk
+-include TouchGFX/gui/src/trackswheel_screen/subdir.mk
 -include TouchGFX/gui/src/trackslist_screen/subdir.mk
 -include TouchGFX/gui/src/time_date_screen/subdir.mk
 -include TouchGFX/gui/src/settings_screen/subdir.mk
@@ -34,6 +35,7 @@ RM := rm -rf
 -include TouchGFX/gui/src/addnewtrack_screen/subdir.mk
 -include TouchGFX/generated/texts/src/subdir.mk
 -include TouchGFX/generated/images/src/subdir.mk
+-include TouchGFX/generated/gui_generated/src/trackswheel_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/trackslist_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/time_date_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/settings_screen/subdir.mk

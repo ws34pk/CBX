@@ -2693,6 +2693,7 @@
             "Y": 18,
             "Width": 300,
             "Height": 204,
+            "Snapping": true,
             "IsCircular": true,
             "ItemTemplateName": "CustomContainer1",
             "NumberofItems": 10,
@@ -2717,13 +2718,55 @@
             }
           }
         ]
+      },
+      {
+        "Name": "trackswheel",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "Width": 320,
+            "Height": 240
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "X": 10,
+            "Y": 21,
+            "Width": 300,
+            "Height": 199,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "CustomContainer2",
+            "IsCircular": true,
+            "ItemTemplateName": "trackwheel",
+            "NumberofItems": 10,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "OverShootPercentage": 75
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "trackswheel"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
       {
         "Name": "CustomContainer1",
         "Width": 300,
-        "Height": 50,
+        "Height": 52,
         "Components": [
           {
             "Type": "Image",
@@ -2737,7 +2780,7 @@
             "Type": "Box",
             "Name": "box1",
             "Width": 300,
-            "Height": 50
+            "Height": 52
           },
           {
             "Type": "TextArea",
@@ -2758,6 +2801,77 @@
               "TextId": "__SingleUse_N2OR",
               "UseBuffer": true,
               "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "trackwheel",
+        "Width": 300,
+        "Height": 50,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 300,
+            "Height": 50
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "Y": 12,
+            "Width": 292,
+            "Height": 26,
+            "TextId": "__SingleUse_WAEG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_UR04",
+              "UseBuffer": true,
+              "BufferSize": 16
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "CustomContainer2",
+        "Width": 300,
+        "Height": 50,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 300,
+            "Height": 50,
+            "Color": {
+              "Red": 255,
+              "Green": 73
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 5,
+            "Y": 14,
+            "Width": 290,
+            "Height": 23,
+            "TextId": "__SingleUse_462R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_HWIF",
+              "UseBuffer": true,
+              "BufferSize": 16
             }
           }
         ],

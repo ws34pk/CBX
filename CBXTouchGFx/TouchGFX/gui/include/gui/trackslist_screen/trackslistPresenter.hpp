@@ -27,6 +27,8 @@ public:
 
     virtual ~trackslistPresenter() {}
 
+    virtual void check_buttons (uint8_t buttons_state);
+
 private:
     trackslistPresenter();
 

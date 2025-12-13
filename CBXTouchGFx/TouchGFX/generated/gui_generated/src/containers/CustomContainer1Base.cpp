@@ -9,12 +9,12 @@
 CustomContainer1Base::CustomContainer1Base()
 {
     setWidth(300);
-    setHeight(50);
+    setHeight(52);
     image1.setXY(0, 50);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_LONG_DIVIDER_ID));
     add(image1);
 
-    box1.setPosition(0, 0, 300, 50);
+    box1.setPosition(0, 0, 300, 52);
     box1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(box1);
 

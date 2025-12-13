@@ -74,6 +74,7 @@ TouchGFX/generated/gui_generated/src/set_time_screen \
 TouchGFX/generated/gui_generated/src/settings_screen \
 TouchGFX/generated/gui_generated/src/time_date_screen \
 TouchGFX/generated/gui_generated/src/trackslist_screen \
+TouchGFX/generated/gui_generated/src/trackswheel_screen \
 TouchGFX/generated/images/src \
 TouchGFX/generated/texts/src \
 TouchGFX/gui/src/addnewtrack_screen \
@@ -95,6 +96,7 @@ TouchGFX/gui/src/set_time_screen \
 TouchGFX/gui/src/settings_screen \
 TouchGFX/gui/src/time_date_screen \
 TouchGFX/gui/src/trackslist_screen \
+TouchGFX/gui/src/trackswheel_screen \
 TouchGFX/target \
 TouchGFX/target/generated \
 Utilities/lpm/tiny_lpm \

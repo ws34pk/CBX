@@ -127,6 +127,15 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
+ ../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/trackswheel_screen/trackswheelViewBase.hpp \
+ ../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ ../TouchGFX/gui/include/gui/containers/trackwheel.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/trackwheelBase.hpp \
+ ../TouchGFX/gui/include/gui/containers/CustomContainer2.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer2Base.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintImpl.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Paint.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintRGB565Impl.hpp \
@@ -303,6 +312,15 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 ../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
+../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/trackswheel_screen/trackswheelViewBase.hpp:
+../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+../TouchGFX/gui/include/gui/containers/trackwheel.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/containers/trackwheelBase.hpp:
+../TouchGFX/gui/include/gui/containers/CustomContainer2.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer2Base.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintImpl.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Paint.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintRGB565Impl.hpp:

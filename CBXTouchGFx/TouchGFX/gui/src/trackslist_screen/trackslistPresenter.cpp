@@ -16,3 +16,9 @@ void trackslistPresenter::deactivate()
 {
 
 }
+
+
+void trackslistPresenter::check_buttons (uint8_t buttons_state)
+{
+	view.check_buttons(buttons_state);
+}

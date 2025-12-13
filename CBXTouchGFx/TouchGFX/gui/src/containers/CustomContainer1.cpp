@@ -1,4 +1,5 @@
 #include <gui/containers/CustomContainer1.hpp>
+#include <touchgfx/Color.hpp>
 
 CustomContainer1::CustomContainer1()
 {
@@ -10,6 +11,20 @@ void CustomContainer1::initialize()
     CustomContainer1Base::initialize();
     textArea1.setWildcard(textArea1Buffer);
 }
+
+void CustomContainer1::setHighlighted(bool on)
+{
+    if(on)
+    {
+        box1.setColor(touchgfx::Color::getColorFromRGB(0, 128, 255));   // highlight color
+    }
+    else
+    {
+    	box1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));    // normal background
+    }
+    box1.invalidate();
+}
+
 
 void CustomContainer1::setListElements(int item)
 {
@@ -70,6 +85,5 @@ void CustomContainer1::setListElements(int item)
 
 	    //Unicode::snprintf(textBuffer, 32, "%s", names[item]);
 		Unicode::fromUTF8((const uint8_t*)names[item], textArea1Buffer, TEXTAREA1_SIZE);
-	    //textArea1.invalidate();
-		box1.invalidate();
+	    textArea1.invalidate();
 }

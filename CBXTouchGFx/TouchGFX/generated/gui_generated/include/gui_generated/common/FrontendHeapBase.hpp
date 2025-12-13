@@ -44,6 +44,8 @@
 #include <gui/recordtrack_screen/recordtrackPresenter.hpp>
 #include <gui/trackslist_screen/trackslistView.hpp>
 #include <gui/trackslist_screen/trackslistPresenter.hpp>
+#include <gui/trackswheel_screen/trackswheelView.hpp>
+#include <gui/trackswheel_screen/trackswheelPresenter.hpp>
 
 
 /**
@@ -82,7 +84,8 @@ public:
             touchgfx::meta::TypeList< set_timeView,
             touchgfx::meta::TypeList< recordtrackView,
             touchgfx::meta::TypeList< trackslistView,
-            touchgfx::meta::Nil > > > > > > > > > > > > > > >
+            touchgfx::meta::TypeList< trackswheelView,
+            touchgfx::meta::Nil > > > > > > > > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -110,7 +113,8 @@ public:
             touchgfx::meta::TypeList< set_timePresenter,
             touchgfx::meta::TypeList< recordtrackPresenter,
             touchgfx::meta::TypeList< trackslistPresenter,
-            touchgfx::meta::Nil > > > > > > > > > > > > > > >
+            touchgfx::meta::TypeList< trackswheelPresenter,
+            touchgfx::meta::Nil > > > > > > > > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

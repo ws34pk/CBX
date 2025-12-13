@@ -13,8 +13,12 @@ public:
     virtual void tearDownScreen();
 
     virtual void scrollList1UpdateItem(CustomContainer1& item, int16_t index);
+    void scrollUp();
+    void scrollDown();
+    virtual void check_buttons(uint8_t buttons_state);
     //void updateListItem(CustomContainer1& item, int16_t index);
 
+    volatile int16_t selectedIndex;
 protected:
     Callback<trackslistView, int16_t> scrollList1_ItemSelectedCallback;
     void scrollList_ItemSelectedHandler(int16_t ItemSelected);

@@ -65,6 +65,9 @@ public:
     // trackslist
     void gototrackslistScreenNoTransition();
 
+    // trackswheel
+    void gototrackswheelScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -114,6 +117,9 @@ protected:
 
     // trackslist
     void gototrackslistScreenNoTransitionImpl();
+
+    // trackswheel
+    void gototrackswheelScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

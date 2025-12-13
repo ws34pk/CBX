@@ -125,6 +125,15 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
+ ../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/trackswheel_screen/trackswheelViewBase.hpp \
+ ../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ ../TouchGFX/gui/include/gui/containers/trackwheel.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/trackwheelBase.hpp \
+ ../TouchGFX/gui/include/gui/containers/CustomContainer2.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer2Base.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -251,4 +260,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 ../TouchGFX/gui/include/gui/containers/CustomContainer1.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
+../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/trackswheel_screen/trackswheelViewBase.hpp:
+../TouchGFX/gui/include/gui/trackswheel_screen/trackswheelPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+../TouchGFX/gui/include/gui/containers/trackwheel.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/containers/trackwheelBase.hpp:
+../TouchGFX/gui/include/gui/containers/CustomContainer2.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/containers/CustomContainer2Base.hpp:
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

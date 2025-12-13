@@ -13,8 +13,8 @@ public:
     virtual void initialize();
 
     void setListElements(int item);
+    void setHighlighted(bool on);
 
-    Unicode::UnicodeChar textBuffer[32];
 protected:
 };
 

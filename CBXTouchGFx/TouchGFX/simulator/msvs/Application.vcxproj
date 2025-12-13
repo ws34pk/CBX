@@ -71,6 +71,13 @@
     <ClCompile Include="..\..\gui\src\trackslist_screen\trackslistPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\trackslist_screen\trackslistView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\trackslist_screen\trackslistViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\trackswheel_screen\trackswheelPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\trackswheel_screen\trackswheelView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\trackswheel_screen\trackswheelViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\trackwheel.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\trackwheelBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer2.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer2Base.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -271,6 +278,13 @@
     <ClInclude Include="..\..\gui\include\gui\trackslist_screen\trackslistPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\trackslist_screen\trackslistView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\trackslist_screen\trackslistViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\trackswheel_screen\trackswheelPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\trackswheel_screen\trackswheelView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\trackswheel_screen\trackswheelViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\trackwheel.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\trackwheelBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer2.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer2Base.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

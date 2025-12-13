@@ -38,39 +38,41 @@ C:\ST\STM32CubeIDE_1.18.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.external
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:18:18:virtual void FrontendApplicationBase::changeToStartScreen()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:35:18:virtual void touchgfx::NoTransition::handleTickEvent()	16	static
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:26:10:void ModelListener::bind(Model*)	16	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:47:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:49:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>& touchgfx::GenericCallback<void>::operator=(const touchgfx::GenericCallback<void>&)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:424:8:constexpr touchgfx::Callback<FrontendApplicationBase>& touchgfx::Callback<FrontendApplicationBase>::operator=(touchgfx::Callback<FrontendApplicationBase>&&)	16	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:66:6:void FrontendApplicationBase::gotoMainScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:72:6:void FrontendApplicationBase::gotoMainScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:79:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:85:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:92:6:void FrontendApplicationBase::gotoScreen2ScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:98:6:void FrontendApplicationBase::gotoScreen2ScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:105:6:void FrontendApplicationBase::gotoScreen3ScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:111:6:void FrontendApplicationBase::gotoScreen3ScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:118:6:void FrontendApplicationBase::gotoScreen4ScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:124:6:void FrontendApplicationBase::gotoScreen4ScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:131:6:void FrontendApplicationBase::gotoaddnewtrackScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:137:6:void FrontendApplicationBase::gotoaddnewtrackScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:144:6:void FrontendApplicationBase::gotonewtrackScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:150:6:void FrontendApplicationBase::gotonewtrackScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:157:6:void FrontendApplicationBase::gotosettingsScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:163:6:void FrontendApplicationBase::gotosettingsScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:170:6:void FrontendApplicationBase::gotolanguageScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:176:6:void FrontendApplicationBase::gotolanguageScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:183:6:void FrontendApplicationBase::gotoScreen6ScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:189:6:void FrontendApplicationBase::gotoScreen6ScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:196:6:void FrontendApplicationBase::gototime_dateScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:202:6:void FrontendApplicationBase::gototime_dateScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:209:6:void FrontendApplicationBase::gotoset_dateScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:215:6:void FrontendApplicationBase::gotoset_dateScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:222:6:void FrontendApplicationBase::gotoset_timeScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:228:6:void FrontendApplicationBase::gotoset_timeScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:235:6:void FrontendApplicationBase::gotorecordtrackScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:241:6:void FrontendApplicationBase::gotorecordtrackScreenNoTransitionImpl()	24	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:248:6:void FrontendApplicationBase::gototrackslistScreenNoTransition()	48	static
-../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:254:6:void FrontendApplicationBase::gototrackslistScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:68:6:void FrontendApplicationBase::gotoMainScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:74:6:void FrontendApplicationBase::gotoMainScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:81:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:87:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:94:6:void FrontendApplicationBase::gotoScreen2ScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:100:6:void FrontendApplicationBase::gotoScreen2ScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:107:6:void FrontendApplicationBase::gotoScreen3ScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:113:6:void FrontendApplicationBase::gotoScreen3ScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:120:6:void FrontendApplicationBase::gotoScreen4ScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:126:6:void FrontendApplicationBase::gotoScreen4ScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:133:6:void FrontendApplicationBase::gotoaddnewtrackScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:139:6:void FrontendApplicationBase::gotoaddnewtrackScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:146:6:void FrontendApplicationBase::gotonewtrackScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:152:6:void FrontendApplicationBase::gotonewtrackScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:159:6:void FrontendApplicationBase::gotosettingsScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:165:6:void FrontendApplicationBase::gotosettingsScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:172:6:void FrontendApplicationBase::gotolanguageScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:178:6:void FrontendApplicationBase::gotolanguageScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:185:6:void FrontendApplicationBase::gotoScreen6ScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:191:6:void FrontendApplicationBase::gotoScreen6ScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:198:6:void FrontendApplicationBase::gototime_dateScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:204:6:void FrontendApplicationBase::gototime_dateScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:211:6:void FrontendApplicationBase::gotoset_dateScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:217:6:void FrontendApplicationBase::gotoset_dateScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:224:6:void FrontendApplicationBase::gotoset_timeScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:230:6:void FrontendApplicationBase::gotoset_timeScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:237:6:void FrontendApplicationBase::gotorecordtrackScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:243:6:void FrontendApplicationBase::gotorecordtrackScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:250:6:void FrontendApplicationBase::gototrackslistScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:256:6:void FrontendApplicationBase::gototrackslistScreenNoTransitionImpl()	24	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:263:6:void FrontendApplicationBase::gototrackswheelScreenNoTransition()	48	static
+../TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:269:6:void FrontendApplicationBase::gototrackswheelScreenNoTransitionImpl()	24	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>::GenericCallback()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:427:5:touchgfx::Callback<dest_type, void, void, void>::Callback() [with dest_type = FrontendApplicationBase]	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:440:5:touchgfx::Callback<dest_type, void, void, void>::Callback(dest_type*, void (dest_type::*)()) [with dest_type = FrontendApplicationBase]	24	static
@@ -90,6 +92,7 @@ C:\ST\STM32CubeIDE_1.18.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.external
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(Screen**, Presenter**, MVPHeap&, Transition**, ModelType*) [with ScreenType = set_timeView; PresenterType = set_timePresenter; TransType = NoTransition; ModelType = Model]	72	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(Screen**, Presenter**, MVPHeap&, Transition**, ModelType*) [with ScreenType = recordtrackView; PresenterType = recordtrackPresenter; TransType = NoTransition; ModelType = Model]	72	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(Screen**, Presenter**, MVPHeap&, Transition**, ModelType*) [with ScreenType = trackslistView; PresenterType = trackslistPresenter; TransType = NoTransition; ModelType = Model]	72	static
+../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(Screen**, Presenter**, MVPHeap&, Transition**, ModelType*) [with ScreenType = trackswheelView; PresenterType = trackswheelPresenter; TransType = NoTransition; ModelType = Model]	72	static
 ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::NoTransition]	16	static
 ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = MainView]	16	static
 ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = MainPresenter]	16	static
@@ -136,6 +139,9 @@ C:\ST\STM32CubeIDE_1.18.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.external
 ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = trackslistView]	16	static
 ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = trackslistPresenter]	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = trackslistPresenter]	16	static
+../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = trackswheelView]	16	static
+../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = trackswheelPresenter]	16	static
+../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = trackswheelPresenter]	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:31:7:touchgfx::NoTransition::~NoTransition()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:31:7:virtual touchgfx::NoTransition::~NoTransition()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:449:18:void touchgfx::Callback<dest_type, void, void, void>::execute() [with dest_type = FrontendApplicationBase]	16	static

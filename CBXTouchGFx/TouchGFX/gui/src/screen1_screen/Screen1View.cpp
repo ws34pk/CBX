@@ -38,7 +38,7 @@ void Screen1View::check_buttons(uint8_t buttons_state)
 		}
 		else if(box3.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
 			//static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen2ScreenNoTransition();
-			static_cast<FrontendApplication*>(Application::getInstance())->gototrackslistScreenNoTransition();
+			static_cast<FrontendApplication*>(Application::getInstance())->gototrackswheelScreenNoTransition();
 		else if(box4.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
 			static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen6ScreenNoTransition();
 		else if(box7.getColor() == touchgfx::Color::getColorFromRGB(0xff, 0x49, 0))
