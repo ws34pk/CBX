@@ -378,11 +378,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	static uint32_t last_tick=0;
-	uint32_t current_tick;
-	current_tick = HAL_GetTick();
-	if(current_tick > (last_tick+200))
+	if((HAL_GetTick() - last_tick) > 200)
 	{
-		last_tick = current_tick;
+		last_tick = HAL_GetTick();
 		if(GPIO_Pin == SEL_KEY_Pin)
 			sel_key_state = 1;
 		else if(GPIO_Pin == SET_KEY_Pin)

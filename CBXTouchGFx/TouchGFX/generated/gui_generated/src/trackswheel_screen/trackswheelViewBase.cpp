@@ -17,11 +17,11 @@ trackswheelViewBase::trackswheelViewBase() :
 
     scrollWheel1.setPosition(10, 21, 300, 199);
     scrollWheel1.setHorizontal(false);
-    scrollWheel1.setCircular(true);
+    scrollWheel1.setCircular(false);
     scrollWheel1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
     scrollWheel1.setSwipeAcceleration(10);
     scrollWheel1.setDragAcceleration(10);
-    scrollWheel1.setNumberOfItems(10);
+    scrollWheel1.setNumberOfItems(50);
     scrollWheel1.setSelectedItemOffset(0);
     scrollWheel1.setOvershootPercentage(75);
     scrollWheel1.setSelectedItemExtraSize(0, 0);

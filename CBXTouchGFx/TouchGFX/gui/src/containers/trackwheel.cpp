@@ -1,5 +1,11 @@
 #include <gui/containers/trackwheel.hpp>
 
+extern "C" {
+#include "main.h"
+extern volatile uint8_t no_of_tracks;
+extern volatile uint8_t tracks_list[MAX_NO_OF_TRACKS][MAX_TRACK_NAME_LENGTH];
+}
+
 trackwheel::trackwheel()
 {
 
@@ -13,46 +19,6 @@ void trackwheel::initialize()
 void trackwheel::setListElements(int item)
 {
 	/*
-	switch(item)
-	{
-	case 0:
-		textArea1.setTypedText();
-		break;
-	case 1:
-		textArea1.setTypedText();
-		break;
-	case 2:
-		textArea1.setTypedText();
-		break;
-	case 3:
-		textArea1.setTypedText();
-		break;
-	case 4:
-		textArea1.setTypedText();
-		break;
-	case 5:
-		textArea1.setTypedText();
-		break;
-	case 6:
-		textArea1.setTypedText();
-		break;
-	case 7:
-		textArea1.setTypedText();
-		break;
-	case 8:
-		textArea1.setTypedText();
-		break;
-	case 9:
-		textArea1.setTypedText();
-		break;
-	case 10:
-		textArea1.setTypedText();
-		break;
-	default:
-		break;
-
-	}
-	*/
 	static const char* names[10] =
 	{
 		"Apple",
@@ -66,8 +32,10 @@ void trackwheel::setListElements(int item)
 		"Indian Plum",
 		"Jackfruit"
 	};
+	*/
 
-	    //Unicode::snprintf(textBuffer, 32, "%s", names[item]);
-		Unicode::fromUTF8((const uint8_t*)names[item], textArea1Buffer, TEXTAREA1_SIZE);
+	    //Unicode::snprintf(textArea1Buffer, 10, "%s", &tracks_list[item][0]);
+		//Unicode::fromUTF8((const uint8_t*)names[item], textArea1Buffer, TEXTAREA1_SIZE);
+		Unicode::fromUTF8((const uint8_t*)&tracks_list[item][0], textArea1Buffer, 15);
 	    textArea1.invalidate();
 }

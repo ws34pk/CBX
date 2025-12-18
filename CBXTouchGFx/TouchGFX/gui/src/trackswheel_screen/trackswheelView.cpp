@@ -1,13 +1,23 @@
 #include <gui/trackswheel_screen/trackswheelView.hpp>
 
+extern "C"{
+extern volatile uint8_t no_of_tracks;
+extern volatile uint8_t selected_track_index;
+}
+
 trackswheelView::trackswheelView()
 {
-
+	//scrollWheel1.setNumberOfItems(no_of_tracks);
 }
 
 void trackswheelView::setupScreen()
 {
-    trackswheelViewBase::setupScreen();
+	if(no_of_tracks) {
+		//scrollWheel1.setMaxSwipeItems(no_of_tracks);
+		scrollWheel1.setNumberOfItems(no_of_tracks);
+		scrollWheel1.invalidate();
+	}
+	trackswheelViewBase::setupScreen();
 }
 
 void trackswheelView::tearDownScreen()
@@ -27,6 +37,13 @@ void trackswheelView::scrollWheel1UpdateCenterItem(CustomContainer2& item, int16
 
 void trackswheelView::check_buttons(uint8_t buttons_state)
 {
+	//return to the main screen
+	if(buttons_state == 0x01)
+		static_cast<FrontendApplication*>(Application::getInstance())->gotoScreen1ScreenNoTransition();
+
+	if(buttons_state == 0x02)
+		selected_track_index = scrollWheel1.getSelectedItem();
+
 	if(buttons_state == 0x04) {
 		scrollUp();
 	}
@@ -42,7 +59,7 @@ void trackswheelView::scrollUp()
     {
         selectedIndex--;
         scrollWheel1.invalidate();
-        scrollWheel1.animateToItem(selectedIndex, 10);
+        scrollWheel1.animateToItem(selectedIndex, no_of_tracks);
         //box1.invalidate();
     }
 }
@@ -53,7 +70,7 @@ void trackswheelView::scrollDown()
     {
         selectedIndex++;
         scrollWheel1.invalidate();
-        scrollWheel1.animateToItem(selectedIndex, 10);
+        scrollWheel1.animateToItem(selectedIndex, no_of_tracks);
         //box1.invalidate();
     }
 }

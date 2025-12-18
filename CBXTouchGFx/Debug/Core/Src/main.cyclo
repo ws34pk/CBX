@@ -4,7 +4,7 @@
 ../Core/Src/main.c:348:6:PeriphCommonClock_Config	2
 ../Core/Src/main.c:369:6:HAL_UART_RxCpltCallback	2
 ../Core/Src/main.c:378:6:HAL_GPIO_EXTI_Callback	6
-../Core/Src/main.c:398:6:set_flag	1
-../Core/Src/main.c:403:6:clear_flag	1
-../Core/Src/main.c:408:10:read_flag	1
-../Core/Src/main.c:429:6:Error_Handler	1
+../Core/Src/main.c:396:6:set_flag	1
+../Core/Src/main.c:401:6:clear_flag	1
+../Core/Src/main.c:406:10:read_flag	1
+../Core/Src/main.c:427:6:Error_Handler	1

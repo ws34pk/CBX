@@ -33,8 +33,10 @@ volatile uint8_t gps_status;
 volatile uint8_t gps_data_validity;
 
 volatile uint8_t no_of_tracks = 0;
-volatile uint8_t tracks_list[10][32];
+volatile uint8_t tracks_list[MAX_NO_OF_TRACKS][MAX_TRACK_NAME_LENGTH];
 volatile uint8_t tracks_list_index = 0;
+
+volatile uint8_t selected_track_index = 0;
 
 void serial_comm_process(void)
 {
@@ -153,6 +155,11 @@ void received_messages_process(void)
 		}
 		else if(!strncmp(&msg_buff[processed_msg_index][1],"*006",4)) {
 			memcpy(&tracks_list[tracks_list_index][0], &msg_buff[processed_msg_index][5], msg_buff[processed_msg_index][0] - 4);
+			for(uint8_t i=0;i<MAX_TRACK_NAME_LENGTH;i++){
+				if(tracks_list[tracks_list_index][i] == '.')
+					tracks_list[tracks_list_index][i] = '\0';
+			}
+
 			tracks_list_index++;
 			if(tracks_list_index > (no_of_tracks - 1))
 				tracks_list_index = 0;
@@ -229,4 +236,16 @@ uint8_t extract_no_of_tracks(uint8_t *gps_msg)
 
 	no_of_tracks = atoi(bytes);
 	return(no_of_tracks);
+}
+
+void format_track_names(void)
+{
+	for(uint8_t i=0; i<no_of_tracks; i++) {
+		uint8_t no_of_bytes = strlen(tracks_list[i][0]);
+		for(uint8_t j=0;j < no_of_bytes; j++)
+			if(tracks_list[i][j] = '.') {
+				tracks_list[i][j] = '\0';
+				break;
+			}
+	}
 }

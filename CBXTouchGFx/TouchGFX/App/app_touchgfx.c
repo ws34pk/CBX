@@ -61,7 +61,6 @@ void MX_TouchGFX_Init(void)
     touchgfx_components_init();
     touchgfx_init();
 }
-
 /**
  * TouchGFX application entry function
  */

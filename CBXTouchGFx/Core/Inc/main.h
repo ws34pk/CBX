@@ -91,6 +91,8 @@ uint32_t read_flag(volatile uint32_t *flag_variable, uint32_t flag);
 #define INC_KEY_EXTI_IRQn EXTI3_IRQn
 
 /* USER CODE BEGIN Private defines */
+#define		MAX_NO_OF_TRACKS					50
+#define		MAX_TRACK_NAME_LENGTH				15
 
 #define		FLAG_USART_1_LINE_READY				(1u << 0)
 #define		FLAG_USART_2_LINE_READY				(1u << 1)

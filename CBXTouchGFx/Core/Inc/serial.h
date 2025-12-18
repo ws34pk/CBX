@@ -25,6 +25,8 @@ void transmit_messages_process(void);
 void received_messages_process(void);
 void serial_comm_process(void);
 
+void format_track_names(void);
+
 void extract_gps_data(uint8_t *gps_msg);
 uint8_t extract_no_of_tracks(uint8_t *gps_msg);
 
